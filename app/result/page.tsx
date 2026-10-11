@@ -215,10 +215,7 @@ export default function ResultPage() {
                 Important Disclaimer
               </h2>
             </div>
-            <p className="text-[18px] text-[#2D3E50] font-semibold leading-[1.6] mb-[12px]">
-              This information explains publicly available policy conditions. It does not determine your personal eligibility, approve a claim, or guarantee a payout.
-            </p>
-            <p className="text-[17px] text-[#5A6C7D] leading-[1.6] m-0">
+            <p className="text-[18px] text-[#2D3E50] font-semibold leading-[1.6] m-0">
               {disclaimer.text}
             </p>
           </section>
