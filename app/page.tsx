@@ -82,10 +82,16 @@ export default function HomePage() {
 
       {/* Policy Overview Card */}
       <div className="w-full max-w-[940px] mx-auto bg-white border-2 border-[#E1E8ED] rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row -mt-8 relative z-10">
-        <div className="w-full md:w-[45%] relative h-[220px] md:h-auto bg-[#2D3E50]">
-          {/* Note: You'll need to add the image to public folder */}
-          <div className="w-full h-full bg-gradient-to-br from-[#2D3E50] to-[#1a2838] flex items-center justify-center">
-            <span className="text-white/30 text-sm">Image placeholder</span>
+        <div className="w-full md:w-[45%] relative h-[220px] md:h-auto bg-gradient-to-br from-[#2D3E50] to-[#1a2838]">
+          {/* SVG Illustration */}
+          <div className="w-full h-full flex items-center justify-center p-8">
+            <svg viewBox="0 0 200 200" className="w-full h-full max-w-[140px]" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="80" fill="#5DCCCC" opacity="0.2"/>
+              <circle cx="100" cy="100" r="60" fill="#5DCCCC" opacity="0.3"/>
+              <path d="M 100 40 L 130 80 L 170 80 L 140 105 L 155 145 L 100 115 L 45 145 L 60 105 L 30 80 L 70 80 Z" fill="#F5D576" opacity="0.9"/>
+              <circle cx="100" cy="100" r="25" fill="#FFFFFF" opacity="0.4"/>
+              <path d="M 90 100 L 95 110 L 110 95" stroke="#2D3E50" strokeWidth="3" fill="none" strokeLinecap="round"/>
+            </svg>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-4">
             <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded-md">
