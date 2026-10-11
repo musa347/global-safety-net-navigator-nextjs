@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-turquoise: #5DCCCC;
+    --color-turquoise-hover: #4DBABA;
+    --color-turquoise-light: #E8F4F4;
+
+    --color-navy: #2D3E50;
+    --color-navy-hover: #3A4F63;
+
+    --color-yellow: #F5D576;
+    --color-yellow-hover: #F0CA5E;
+
+    --color-warning-bg: #FFF9E6;
+    --color-warning-border: #F5D576;
+
+    --color-error-bg: #FFEEF2;
+    --color-error-border: #E85D75;
+
+    --color-white: #FFFFFF;
+    --color-bg-light: #F8F9FA;
+    --color-text-primary: #2D3E50;
+    --color-text-secondary: #5A6C7D;
+    --color-border: #E1E8ED;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+    background-color: #F7F9FF;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
