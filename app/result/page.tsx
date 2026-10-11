@@ -105,7 +105,7 @@ export default function ResultPage() {
                 assignment
               </span>
               <h1 className="text-[26px] md:text-[28px] text-[#2D3E50] font-bold">
-                What the Policy States
+                What the Published Information Says
               </h1>
             </div>
             <p className="text-[17px] text-[#5A6C7D] leading-[1.6] mb-[28px]">
@@ -114,7 +114,7 @@ export default function ResultPage() {
 
             {/* Benefit Structure Subheading */}
             <h3 className="text-lg font-bold text-[#2D3E50] mb-[16px] tracking-tight">
-              Benefit Structure
+              Benefit Summary
             </h3>
 
             {/* 3 Benefit Cards Grid */}
@@ -125,7 +125,7 @@ export default function ResultPage() {
                   MAXIMUM
                 </span>
                 <div className="text-[26px] font-extrabold text-[#2D3E50]">
-                  {benefitStructure.maximumMonthlyBenefit.qualifier} ${benefitStructure.maximumMonthlyBenefit.amount.toLocaleString()}/mo
+                  {benefitStructure.maximumMonthlyBenefit.qualifier} ${benefitStructure.maximumMonthlyBenefit.amount.toLocaleString()}/month
                 </div>
                 <p className="text-xs text-[#5A6C7D] italic mt-[4px] m-0">
                   {benefitStructure.maximumMonthlyBenefit.currency}
@@ -159,12 +159,12 @@ export default function ResultPage() {
               </div>
             </div>
 
-            {/* Eligibility Conditions Subheading */}
+            {/* Policy Conditions Subheading */}
             <h3 className="text-xl font-bold text-[#2D3E50] mb-[20px] flex items-center gap-[8px]">
               <span className="material-symbols-outlined text-[#006a6a] text-[22px]">
-                fact_check
+                gavel
               </span>
-              <span>Policy Conditions</span>
+              <span>What the Policy States</span>
             </h3>
 
             {/* Policy Conditions - Dynamic from API */}
@@ -176,7 +176,7 @@ export default function ResultPage() {
                 >
                   <h4 className="text-lg font-bold text-[#2D3E50] mb-[6px] flex items-center gap-2">
                     <span className="material-symbols-outlined text-[#006a6a] text-[18px]">
-                      verified
+                      check_circle
                     </span>
                     <span>{condition.title}</span>
                   </h4>
@@ -192,7 +192,7 @@ export default function ResultPage() {
           <section className="bg-[#FFF9E6] border-[3px] border-[#F5D576] rounded-xl p-[28px] md:p-[32px_36px] mb-[32px] shadow-xs">
             <div className="flex items-center gap-[10px] mb-[14px]">
               <span className="material-symbols-outlined text-[#735c02] text-[26px]">
-                warning
+                task
               </span>
               <h2 className="text-[22px] font-bold text-[#2D3E50]">
                 What You Still Need to Verify
@@ -211,52 +211,71 @@ export default function ResultPage() {
             </ul>
           </section>
 
-          {/* SECTION 4: Important Limitation Disclaimer Card */}
-          <section className="bg-[#FFEEF2] border-[3px] border-[#E85D75] rounded-xl p-[24px] md:p-[28px_32px] mb-[32px] shadow-xs">
-            <div className="flex items-center gap-[10px] mb-[12px]">
-              <span className="material-symbols-outlined text-[#E85D75] text-[26px]">
-                error
+          {/* SECTION 4: Important Disclaimer Card */}
+          <section className="bg-[#FFEEF2] border-[3px] border-[#E85D75] rounded-xl p-[28px] md:p-[32px] mb-[32px] shadow-md">
+            <div className="flex items-center gap-[10px] mb-[14px]">
+              <span className="material-symbols-outlined text-[#E85D75] text-[28px]">
+                warning
               </span>
-              <h2 className="text-[22px] font-bold text-[#E85D75]">
-                Important Limitation
+              <h2 className="text-[24px] font-bold text-[#E85D75]">
+                Important Disclaimer
               </h2>
             </div>
-            <p className="text-[17px] text-[#2D3E50] font-medium leading-[1.6] m-0">
+            <p className="text-[18px] text-[#2D3E50] font-semibold leading-[1.6] mb-[12px]">
+              This information explains publicly available policy conditions. It does not determine your personal eligibility, approve a claim, or guarantee a payout.
+            </p>
+            <p className="text-[17px] text-[#5A6C7D] leading-[1.6] m-0">
               {disclaimer.text}
             </p>
           </section>
 
-          {/* SECTION 5: Source Attribution Box */}
-          <section className="bg-[#F8F9FA] border-l-4 border-[#5DCCCC] rounded-[8px] p-[22px] md:p-[28px] mb-[48px] shadow-xs">
-            <div className="flex items-center gap-[8px] mb-[12px]">
-              <span className="material-symbols-outlined text-[#006a6a] text-[22px]">
-                source
+          {/* SECTION 5: Source Evidence Box */}
+          <section className="bg-white border-2 border-[#E1E8ED] rounded-xl p-[24px] md:p-[32px] mb-[48px] shadow-[0_4px_12px_rgba(0,0,0,0.03)]">
+            <div className="flex items-center gap-[10px] mb-[20px]">
+              <span className="material-symbols-outlined text-[#006a6a] text-[26px]">
+                fact_check
               </span>
-              <h3 className="text-xl font-bold text-[#2D3E50]">
-                Source Attribution
+              <h3 className="text-[22px] font-bold text-[#2D3E50]">
+                Official Sources & Evidence
               </h3>
             </div>
-            <div className="text-[15px] text-[#5A6C7D] leading-[1.8] space-y-2">
+            <p className="text-[15px] text-[#5A6C7D] mb-[20px]">
+              All information above is sourced from publicly available documents:
+            </p>
+            <div className="space-y-[16px]">
               {sources.map((source) => (
-                <div key={source.id} className="border-t border-gray-200 pt-2 first:border-t-0 first:pt-0">
-                  <div><strong className="font-semibold text-[#0a1d2d]">Source:</strong> {source.title}</div>
-                  {source.effectiveDate && (
-                    <div><strong className="font-semibold text-[#0a1d2d]">Effective:</strong> {new Date(source.effectiveDate).toLocaleDateString()}</div>
-                  )}
-                  <div><strong className="font-semibold text-[#0a1d2d]">Reviewed:</strong> {new Date(source.reviewedDate).toLocaleDateString()}</div>
-                  <div>
-                    <a
-                      href={source.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#006a6a] font-semibold underline hover:text-[#005454] transition-colors inline-flex items-center gap-1"
-                    >
-                      <span>View Source</span>
-                      <span className="material-symbols-outlined text-[16px]">
-                        open_in_new
-                      </span>
-                    </a>
+                <div key={source.id} className="bg-[#F8F9FA] border-l-4 border-[#5DCCCC] rounded-lg p-[20px] hover:shadow-md transition-shadow">
+                  <div className="flex items-start justify-between gap-4 mb-[8px]">
+                    <div className="flex-1">
+                      <div className="font-bold text-[17px] text-[#2D3E50] mb-[6px]">{source.title}</div>
+                      <div className="text-sm text-[#5A6C7D] space-y-1">
+                        {source.effectiveDate && (
+                          <div className="flex items-center gap-2">
+                            <span className="material-symbols-outlined text-[16px] text-[#006a6a]">event</span>
+                            <span><strong>Effective:</strong> {new Date(source.effectiveDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                          </div>
+                        )}
+                        <div className="flex items-center gap-2">
+                          <span className="material-symbols-outlined text-[16px] text-[#006a6a]">verified</span>
+                          <span><strong>Reviewed:</strong> {new Date(source.reviewedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <a
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-[10px] text-[#006a6a] font-semibold text-[15px] hover:text-[#005454] transition-colors underline"
+                  >
+                    <span className="material-symbols-outlined text-[18px]">
+                      description
+                    </span>
+                    <span>View Official Document</span>
+                    <span className="material-symbols-outlined text-[16px]">
+                      open_in_new
+                    </span>
+                  </a>
                 </div>
               ))}
             </div>
@@ -265,7 +284,7 @@ export default function ResultPage() {
           {/* SECTION 6: Next Steps & CTAs */}
           <div className="max-w-[560px] mx-auto text-center flex flex-col items-center">
             <h2 className="text-[28px] font-bold text-[#2D3E50] mb-[24px]">
-              Next Steps
+              Your Next Steps
             </h2>
 
             {/* Primary Yellow CTA Button */}
@@ -275,10 +294,10 @@ export default function ResultPage() {
               rel="noopener noreferrer"
               className="w-full bg-[#F5D576] hover:bg-[#F0CA5E] text-[#2D3E50] font-bold text-lg py-[18px] px-[36px] rounded-xl transition-all duration-200 transform hover:-translate-y-[2px] shadow-[0_4px_12px_rgba(245,213,118,0.35)] cursor-pointer mb-[14px] flex items-center justify-center gap-2 no-underline"
             >
-              <span>{nextSteps.primary.label}</span>
               <span className="material-symbols-outlined text-[20px]">
-                arrow_forward
+                support_agent
               </span>
+              <span>Contact SafetyWing Support</span>
             </a>
             <p className="text-sm text-[#5A6C7D] mb-[20px]">{nextSteps.primary.description}</p>
 
@@ -292,19 +311,19 @@ export default function ResultPage() {
               <span className="material-symbols-outlined text-[20px]">
                 description
               </span>
-              <span>{nextSteps.secondary.label}</span>
+              <span>Read Full Policy Terms</span>
             </a>
             <p className="text-sm text-[#5A6C7D] mb-[24px]">{nextSteps.secondary.description}</p>
 
-            {/* Start over Link */}
+            {/* Explore another situation Link */}
             <Link
-              href="/"
+              href="/scenarios"
               className="text-[16px] text-[#5A6C7D] underline hover:text-[#006a6a] transition-colors cursor-pointer inline-flex items-center gap-1"
             >
               <span className="material-symbols-outlined text-[18px]">
-                restart_alt
+                explore
               </span>
-              <span>Start over</span>
+              <span>Explore another situation</span>
             </Link>
           </div>
         </div>

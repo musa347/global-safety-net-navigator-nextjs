@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function HomePage() {
   return (
@@ -12,7 +11,7 @@ export default function HomePage() {
             public
           </span>
           <span className="font-bold tracking-wide text-[#2D3E50]">
-            CROSS-BORDER NAVIGATOR EDITION 2025
+            CROSS-BORDER NAVIGATOR · 2026
           </span>
           <span className="text-[#5A6C7D] hidden sm:inline">•</span>
           <span className="text-[#5A6C7D] hidden sm:inline">
@@ -21,7 +20,7 @@ export default function HomePage() {
         </div>
         <div className="flex items-center gap-1.5 text-xs font-semibold text-[#006a6a]">
           <span className="w-2 h-2 rounded-full bg-[#006a6a]"></span>
-          <span>Live Prototype Sandbox</span>
+          <span>Independent Prototype</span>
         </div>
       </div>
 
@@ -30,19 +29,19 @@ export default function HomePage() {
         {/* Badge Pill */}
         <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#004f50] mb-6 shadow-xs">
           <span className="material-symbols-outlined text-[#004f50] text-[16px]">
-            verified
+            school
           </span>
-          <span>Independent Global Policy Explorer</span>
+          <span>Independent Prototype</span>
         </div>
 
         {/* Hero Title */}
         <h1 className="text-[40px] md:text-[56px] font-extrabold text-[#193339] leading-[1.15] tracking-tight max-w-[800px] mx-auto mb-4">
-          Understand your options when your income changes.
+          Understand what to verify when your income changes.
         </h1>
 
         {/* Hero Subtitle */}
-        <p className="text-[17px] md:text-[19px] text-[#1c4b57] max-w-[620px] mx-auto font-medium leading-relaxed mb-8">
-          Explore publicly available income-protection information and find the official sources to review.
+        <p className="text-[17px] md:text-[19px] text-[#1c4b57] max-w-[720px] mx-auto font-medium leading-relaxed mb-8">
+          Explore publicly available income-protection information, understand the published conditions, and find the official sources for your next step.
         </p>
 
         {/* Primary Yellow CTA Button */}
@@ -59,12 +58,12 @@ export default function HomePage() {
         </div>
 
         {/* White Notice Card */}
-        <div className="bg-white rounded-xl py-3 px-6 max-w-[600px] mx-auto shadow-xs flex items-center justify-center gap-2 text-xs md:text-sm text-[#5A6C7D]">
+        <div className="bg-white rounded-xl py-3 px-6 max-w-[700px] mx-auto shadow-xs flex items-center justify-center gap-2 text-xs md:text-sm text-[#5A6C7D]">
           <span className="material-symbols-outlined text-[#D97706] text-[18px] shrink-0">
-            warning
+            info
           </span>
           <p className="m-0 text-center leading-normal">
-            <span className="font-bold text-[#2D3E50]">Notice:</span> This independent educational prototype does not determine eligibility or guarantee benefits.
+            <span className="font-bold text-[#2D3E50]">Disclaimer:</span> This project is an independent educational prototype using publicly available information. It is not affiliated with or operated by SafetyWing.
           </p>
         </div>
 
@@ -92,11 +91,6 @@ export default function HomePage() {
               <circle cx="100" cy="100" r="25" fill="#FFFFFF" opacity="0.4"/>
               <path d="M 90 100 L 95 110 L 110 95" stroke="#2D3E50" strokeWidth="3" fill="none" strokeLinecap="round"/>
             </svg>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-4">
-            <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded-md">
-              Borderless Protection Intelligence
-            </span>
           </div>
         </div>
 
@@ -149,7 +143,7 @@ export default function HomePage() {
                 Choose your situation
               </h3>
               <p className="text-[15px] text-[#5A6C7D] leading-relaxed mb-6">
-                Select your current income disruption to see tailored public policy guidelines.
+                Select your current income disruption to see relevant public policy information.
               </p>
             </div>
             <div className="pt-4 border-t border-[#E1E8ED] flex items-center gap-1.5 text-xs text-[#5A6C7D]">
@@ -217,7 +211,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Ready to check your scenario CTA Banner */}
+        {/* Ready to explore CTA Banner */}
         <div className="bg-[#FFF9E6] border border-[#F5D576] rounded-xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 mt-12">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-lg bg-[#fddd7d] flex items-center justify-center text-[#735c02] shrink-0">
@@ -227,7 +221,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="font-bold text-[#2D3E50] text-[17px]">
-                Ready to check your scenario?
+                Ready to explore your situation?
               </div>
               <div className="text-xs text-[#5A6C7D]">
                 Explore remote work, cross-border freelance, and gap coverage.
@@ -269,9 +263,35 @@ export default function HomePage() {
           </span>
         </div>
         <div>
-          <span>Independent reference mirror updated for 2025</span>
+          <span>Content reviewed October 2026</span>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="w-full max-w-[1140px] mx-auto mt-16 mb-8 pt-8 border-t border-[#E1E8ED]">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-[#5A6C7D]">
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <div className="font-bold text-[#2D3E50] text-lg">
+              Global Safety Net Navigator
+            </div>
+            <div className="text-xs text-center md:text-left">
+              Independent educational prototype<br/>
+              Not affiliated with or operated by SafetyWing
+            </div>
+          </div>
+          <div className="flex gap-6 text-xs">
+            <a href="https://safetywing.com/nomad-citizen" target="_blank" rel="noopener noreferrer" className="hover:text-[#006a6a] transition-colors">
+              Sources
+            </a>
+            <a href="https://safetywing.com/contact" target="_blank" rel="noopener noreferrer" className="hover:text-[#006a6a] transition-colors">
+              Support
+            </a>
+          </div>
+        </div>
+        <div className="text-center text-xs text-[#5A6C7D] mt-6">
+          © 2026
+        </div>
+      </footer>
     </div>
   );
 }

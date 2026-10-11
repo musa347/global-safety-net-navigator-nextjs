@@ -100,7 +100,7 @@ export default function ScenariosPage() {
               What happened to your income?
             </h1>
             <p className="text-[18px] text-[#5A6C7D] text-center max-w-[620px] mx-auto leading-relaxed">
-              Select your situation to view relevant policy information
+              Select your situation below to explore published income-protection information.
             </p>
           </div>
 
