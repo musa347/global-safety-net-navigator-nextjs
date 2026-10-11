@@ -52,7 +52,7 @@ export const Header: React.FC = () => {
                   : 'text-[#d2e4fb] hover:text-white font-medium'
               }`}
             >
-              Diagnostics
+              Result
             </Link>
           </nav>
         </div>

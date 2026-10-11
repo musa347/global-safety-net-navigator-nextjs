@@ -93,7 +93,7 @@ export default function ScenariosPage() {
                 rule
               </span>
               <span className="text-xs font-bold text-[#006a6a] tracking-wider uppercase">
-                Diagnostic Step 01
+                Scenario Step 01
               </span>
             </div>
             <h1 className="text-[34px] md:text-[40px] font-extrabold text-[#0a1d2d] text-center mb-[14px] tracking-tight">
@@ -152,15 +152,15 @@ export default function ScenariosPage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-lg bg-[#d9eaff] flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-[#006a6a] text-[24px]">
-                  verified_user
+                  description
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-base font-bold text-[#0a1d2d]">
-                  Verified Knowledge Base
+                  Publicly sourced information
                 </span>
                 <span className="text-xs text-[#5A6C7D]">
-                  Analysis cross-referenced with non-statutory global safety net models
+                  Based on publicly available product and policy documents.
                 </span>
               </div>
             </div>

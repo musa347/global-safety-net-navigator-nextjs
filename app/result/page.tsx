@@ -133,29 +133,23 @@ export default function ResultPage() {
               </div>
 
               {/* Benefit Card 2 - Duration */}
-              <div className="bg-[#E8F4F4] border-2 border-[#5DCCCC] rounded-[10px] py-[24px] px-[16px] text-center flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+              <div className="bg-[#E8F4F4] border-2 border-[#5DCCCC] rounded-[10px] py-[24px] px-[16px] text-center flex flex-col justify-center transition-transform duration-200 hover:-translate-y-1">
                 <span className="text-xs uppercase tracking-[0.05em] font-bold text-[#5A6C7D] mb-[6px]">
                   DURATION
                 </span>
                 <div className="text-[26px] font-extrabold text-[#2D3E50]">
                   {benefitStructure.maximumDuration.qualifier} {benefitStructure.maximumDuration.value} {benefitStructure.maximumDuration.unit}
                 </div>
-                <p className="text-xs text-[#5A6C7D] italic mt-[4px] m-0">
-                  Consecutive disruption support
-                </p>
               </div>
 
               {/* Benefit Card 3 - Frequency */}
-              <div className="bg-[#E8F4F4] border-2 border-[#5DCCCC] rounded-[10px] py-[24px] px-[16px] text-center flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+              <div className="bg-[#E8F4F4] border-2 border-[#5DCCCC] rounded-[10px] py-[24px] px-[16px] text-center flex flex-col justify-center transition-transform duration-200 hover:-translate-y-1">
                 <span className="text-xs uppercase tracking-[0.05em] font-bold text-[#5A6C7D] mb-[6px]">
                   FREQUENCY
                 </span>
                 <div className="text-[20px] font-extrabold text-[#2D3E50]">
                   {benefitStructure.frequencyLimit}
                 </div>
-                <p className="text-xs text-[#5A6C7D] italic mt-[4px] m-0">
-                  Per rolling period
-                </p>
               </div>
             </div>
 
@@ -199,7 +193,7 @@ export default function ResultPage() {
               </h2>
             </div>
             <p className="text-[17px] text-[#5A6C7D] leading-[1.6] mb-[20px]">
-              Only SafetyWing can determine whether you meet these conditions. You will need to confirm:
+              Only SafetyWing can determine whether you meet these conditions. Points to verify against your circumstances:
             </p>
             <ul className="space-y-[12px] text-[17px] text-[#5A6C7D] leading-[1.6] list-none p-0 m-0">
               {itemsToVerify.map((item, index) => (
