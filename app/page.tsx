@@ -15,7 +15,7 @@ export default function HomePage() {
           </span>
           <span className="text-[#5A6C7D] hidden sm:inline">•</span>
           <span className="text-[#5A6C7D] hidden sm:inline">
-            Direct public safety net policy synthesis
+            PUBLIC POLICY EXPLORER
           </span>
         </div>
         <div className="flex items-center gap-1.5 text-xs font-semibold text-[#006a6a]">
@@ -26,14 +26,6 @@ export default function HomePage() {
 
       {/* Hero Section Container */}
       <div className="w-full max-w-[1140px] mx-auto bg-[#5DCCCC] rounded-[24px] pt-14 pb-20 px-6 md:px-12 text-center relative overflow-hidden shadow-xs">
-        {/* Badge Pill */}
-        <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#004f50] mb-6 shadow-xs">
-          <span className="material-symbols-outlined text-[#004f50] text-[16px]">
-            school
-          </span>
-          <span>Independent Prototype</span>
-        </div>
-
         {/* Hero Title */}
         <h1 className="text-[40px] md:text-[56px] font-extrabold text-[#193339] leading-[1.15] tracking-tight max-w-[800px] mx-auto mb-4">
           Understand what to verify when your income changes.
@@ -105,7 +97,7 @@ export default function HomePage() {
             Clear pathways, zero legalese.
           </h2>
           <p className="text-[15px] text-[#5A6C7D] leading-relaxed m-0">
-            We synthesize publicly documented terms across income protection, temporary displacement allowances, and international emergency criteria into simple, step-by-step clarity.
+            We turn publicly available income-protection information into a clear path for understanding what the published policy states and what to verify next.
           </p>
         </div>
       </div>
@@ -120,7 +112,7 @@ export default function HomePage() {
             How it works
           </h2>
           <p className="text-[16px] text-[#5A6C7D] max-w-[620px] mx-auto leading-relaxed">
-            From ambiguity to documentation in less than three minutes without creating an account or entering personal data.
+            From uncertainty to a clearer understanding of the published information in a few simple steps.
           </p>
         </div>
 
@@ -224,7 +216,7 @@ export default function HomePage() {
                 Ready to explore your situation?
               </div>
               <div className="text-xs text-[#5A6C7D]">
-                Explore remote work, cross-border freelance, and gap coverage.
+                Explore the published information for your situation.
               </div>
             </div>
           </div>
@@ -266,32 +258,6 @@ export default function HomePage() {
           <span>Content reviewed October 2026</span>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="w-full max-w-[1140px] mx-auto mt-16 mb-8 pt-8 border-t border-[#E1E8ED]">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-[#5A6C7D]">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="font-bold text-[#2D3E50] text-lg">
-              Global Safety Net Navigator
-            </div>
-            <div className="text-xs text-center md:text-left">
-              Independent educational prototype<br/>
-              Not affiliated with or operated by SafetyWing
-            </div>
-          </div>
-          <div className="flex gap-6 text-xs">
-            <a href="https://safetywing.com/nomad-citizen" target="_blank" rel="noopener noreferrer" className="hover:text-[#006a6a] transition-colors">
-              Sources
-            </a>
-            <a href="https://safetywing.com/contact" target="_blank" rel="noopener noreferrer" className="hover:text-[#006a6a] transition-colors">
-              Support
-            </a>
-          </div>
-        </div>
-        <div className="text-center text-xs text-[#5A6C7D] mt-6">
-          © 2026
-        </div>
-      </footer>
     </div>
   );
 }
